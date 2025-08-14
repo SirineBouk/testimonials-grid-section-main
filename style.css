@@ -1,0 +1,83 @@
+@font-face {
+    font-family: barlow;
+    src: url(font/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+}
+
+*{
+    font-family: barlow;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(214, 17%, 92%);
+}
+.Cards{
+    margin: 100px 25px ;
+}
+
+.Cards .crd{
+    padding: 30px;
+    padding-top: 35px ;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgb(123, 123, 123);
+}
+.crd h2{
+    margin-bottom: 20px;
+}
+.crd h4{
+    font-weight: 500;
+}
+
+.Cards .inf{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.inf .img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 20px;
+}
+.img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+#DanCard{
+    background-color: hsl(263, 55%, 52%) ;
+    color: hsl(260, 100%, 95%);
+}
+#dan{
+    background-color: hsl(264, 82%, 80%);
+}
+
+#JonCard{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(214, 17%, 92%);
+}
+#jon{
+    background-color: hsl(0, 0%, 81%);
+}
+
+#JeanCard{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+#PatCard{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+#pat{
+    background-color: hsl(263, 55%, 52%);
+}
+
+#KiraCard{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
