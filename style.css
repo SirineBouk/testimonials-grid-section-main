@@ -7,6 +7,7 @@
     font-family: barlow;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: hsl(214, 17%, 92%);
@@ -20,12 +21,12 @@ body{
     padding-top: 35px ;
     margin-bottom: 40px;
     border-radius: 10px;
-    box-shadow: 20px 20px 50px rgb(123, 123, 123);
+    box-shadow: 40px 50px 50px hsl(230, 4%, 73%);
 }
-.crd h2{
+.crd h3{
     margin-bottom: 20px;
 }
-.crd h4{
+.crd h5{
     font-weight: 500;
 }
 
@@ -38,30 +39,31 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    padding: 2px;
-    margin-right: 20px;
+    margin-right: 20px;  
 }
 .img img{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%;    
 }
-
+#svg{
+    display: none;
+}
 
 #DanCard{
     background-color: hsl(263, 55%, 52%) ;
     color: hsl(260, 100%, 95%);
 }
-#dan{
-    background-color: hsl(264, 82%, 80%);
+#dan img{
+    border: 2px solid hsl(264, 82%, 80%);
 }
 
 #JonCard{
     background-color: hsl(217, 19%, 35%);
     color: hsl(214, 17%, 92%);
 }
-#jon{
-    background-color: hsl(0, 0%, 81%);
+#jon img{
+    border: 2px solid hsl(0, 0%, 81%);
 }
 
 #JeanCard{
@@ -73,11 +75,57 @@ body{
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 81%);
 }
-#pat{
-    background-color: hsl(263, 55%, 52%);
+#pat img{
+    border: 2px solid hsl(263, 55%, 52%);
 }
 
 #KiraCard{
     background-color: hsl(0, 0%, 100%);
     color: hsl(217, 19%, 35%);
+}
+
+@media (min-width: 900px) {
+  .Cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+  .Cards .crd{
+    position: relative;
+    margin: 0;
+  }
+
+  #DanCard {
+    position: relative;
+    grid-column: 1/3;
+  }
+  #svg{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+  .texte {
+    position: relative;
+    z-index: 1;
+  }
+
+  #JonCard {
+    grid-column: 3;
+  }
+
+  #KiraCard {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  #JeanCard {
+    grid-column: 1;
+  }
+
+  #PatCard {
+    grid-column: span 2;
+  }
 }
